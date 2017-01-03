@@ -45,14 +45,20 @@
 | the active record class
 */
 
-$active_group = 'default';
+if($_SERVER['HTTP_HOST'] != 'localhost' 
+	&& $_SERVER['HTTP_HOST'] != '192.168.43.65')
+	$active_group = 'server';
+else
+	$active_group = 'default';
+
+$active_group = $active_group;
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = 'root';
 $db['default']['database'] = 'siakad';
-$db['default']['dbdriver'] = 'mysql';
+$db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
@@ -63,6 +69,24 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
+
+
+
+$db['server']['hostname'] = 'rohman.web.id';
+$db['server']['username'] = 'rohmanahmad_travel';
+$db['server']['password'] = 'rohmanahmad123';
+$db['server']['database'] = 'rohmanahmad_skdv12';
+$db['server']['dbdriver'] = 'mysqli';
+$db['server']['dbprefix'] = '';
+$db['server']['pconnect'] = TRUE;
+$db['server']['db_debug'] = TRUE;
+$db['server']['cache_on'] = FALSE;
+$db['server']['cachedir'] = '';
+$db['server']['char_set'] = 'utf8';
+$db['server']['dbcollat'] = 'utf8_general_ci';
+$db['server']['swap_pre'] = '';
+$db['server']['autoinit'] = TRUE;
+$db['server']['stricton'] = FALSE;
 
 
 /* End of file database.php */
