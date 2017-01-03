@@ -50,7 +50,7 @@ if($_SERVER['HTTP_HOST'] != 'localhost')
 else
 	$active_group = 'default';
 
-print_r($_SERVER);
+//print_r($_SERVER);
 $active_group = $active_group;
 $active_record = TRUE;
 
