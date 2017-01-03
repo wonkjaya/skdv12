@@ -45,12 +45,12 @@
 | the active record class
 */
 
-if($_SERVER['HTTP_HOST'] != 'localhost' 
-	&& $_SERVER['HTTP_HOST'] != '192.168.43.65')
+if($_SERVER['HTTP_HOST'] != 'localhost')
 	$active_group = 'server';
 else
 	$active_group = 'default';
 
+print_r($_SERVER);
 $active_group = $active_group;
 $active_record = TRUE;
 
