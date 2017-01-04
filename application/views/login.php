@@ -30,11 +30,11 @@
         <script src="<?php echo base_url(); ?>assets/js/jquery.jpanelmenu.min.js"></script>
         <script src="<?php echo base_url(); ?>assets/js/jquery.cookie.js"></script>
         <script src="<?php echo base_url(); ?>assets/js/avocado-custom-predom.js"></script> -->
-        <script>
+        <!-- <script>
             $(function() {
                 $( "#a" ).datepicker();
             });
-        </script>
+        </script> -->
 
     </head>
 
