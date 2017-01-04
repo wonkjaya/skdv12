@@ -10,7 +10,7 @@
                 <blockquote style="padding:20px 10px 20px 10px; color:#333; margin:30px 30px 30px 30px;" >
                     <p>Update Mata Kuliah</b></p>
                 </blockquote>
-                <form name="myForm" action="<?php echo base_url(); ?>index.php/admin/proses_update_matkul"  method="post">     
+                <form name="myForm" action="<?php echo site_url('admin/proses_update_matkul'); ?>"  method="post">     
                     <div class="control-group">
                         <label class="control-label">Kode Mata Kuliah :</label>
                         <div class="controls">

@@ -8,7 +8,7 @@
             </div>
             <div class="well">
                 <div class="pull-right" style="margin:30px 30px 30px 30px;">
-                    <img src="<?php echo base_url(); ?>assets/img/nilai2.png" width="80" height="80"/>
+                    <img src="<?php echo base_url('assets/img/nilai2.png'); ?>" width="80" height="80"/>
                 </div>
 
                 <form name="myForm" action="<?php echo base_url(); ?>index.php/dosen/input_proses_simultan_absensi" onsubmit="return validasi();" method="post">     

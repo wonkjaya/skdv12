@@ -36,7 +36,7 @@ $this->session->unset_userdata('message1');
 
             <div class="well padding">
                 <div class="pull-right" style="margin:30px 30px 30px 30px;">
-                    <img src="<?php echo base_url(); ?>assets/img/nilai_absensi.png" width="80" height="80"/>
+                    <img src="<?php echo base_url('assets/img/nilai_absensi.png"'); ?> width="80" height="80"/>
                 </div>
                 <blockquote style="padding:20px 10px 20px 10px; color:#333; margin:30px 30px 30px 30px;" >
                     <p>Data ini berisi seluruh data dosen yang ada di Fakultas Teknologi Pertanian UJ.</p>
@@ -67,8 +67,8 @@ $this->session->unset_userdata('message1');
                                 <td class="align-center"><?php echo $row->tempat_lahir."/". date('d-F-y', strtotime($row->tanggal_lahir)); ?></td>
                                 <td class="align-center"><?php if($row->jenis_kelamin == 1){ echo "laki-laki"; }else{ echo "perempuan";}  ?></td>                                
                                 <td>
-                                    <a href="<?php echo base_url(); ?>index.php/admin/update_dosen/<?php echo $row->nip; ?>" class="icon-edit" title="Edit" onclick="return confirm('Apakah anda yakin untuk mengupdate data ?');"></a> ||
-                                    <a href="<?php echo base_url(); ?>index.php/admin/delete_dosen/<?php echo $row->nip; ?>"class="icon-remove-sign" title="Delete" onclick="return confirm('Apakah anda yakin untuk menghapus data ?');"></a>
+                                    <a href="<?php echo base_url('index.php/admin/update_dosen/'); ?><?php echo $row->nip; ?>" class="icon-edit" title="Edit" onclick="return confirm('Apakah anda yakin untuk mengupdate data ?');"></a> ||
+                                    <a href="<?php echo base_url('index.php/admin/delete_dosen/'); ?><?php echo $row->nip; ?>"class="icon-remove-sign" title="Delete" onclick="return confirm('Apakah anda yakin untuk menghapus data ?');"></a>
                                 </td>
                             </tr>
                             <?php

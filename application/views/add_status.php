@@ -10,7 +10,7 @@
                 <blockquote style="padding:20px 10px 20px 10px; color:#333; margin:30px 30px 30px 30px;" >
                     <p>Input Data Status Baru</b></p>
                 </blockquote>
-                <form name="myForm" action="<?php echo base_url(); ?>index.php/admin/input_form_status" onsubmit="return validasi();" method="post">     
+                <form name="myForm" action="<?php echo base_url('index.php/admin/input_form_status'); ?>" onsubmit="return validasi();" method="post">     
                     <div class="control-group">
                         <label class="control-label">Tahun Ajaran :</label>
                         <div class="controls">

@@ -10,7 +10,7 @@
                 <blockquote style="padding:20px 10px 20px 10px; color:#333; margin:30px 30px 30px 30px;" >
                     <p>Edit Data Status</b></p>
                 </blockquote>
-                <form name="myForm" action="<?php echo base_url(); ?>index.php/admin/proses_update_status/<?php echo $data_update->kd; ?>" onsubmit="return validasi();" method="post">     
+                <form name="myForm" action="<?php echo site_url('index.php/admin/proses_update_status/'. $data_update->kd); ?>" onsubmit="return validasi();" method="post">     
                     <div class="control-group">
                         <label class="control-label">Tahun Ajaran :</label>
                         <div class="controls">

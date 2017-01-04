@@ -8,7 +8,7 @@
             </div>
             <div class="well">
                 <div class="pull-right" style="margin:30px 30px 30px 30px;">
-                    <img src="<?php echo base_url(); ?>assets/img/nilai3.png" width="80" height="80"/>
+                    <img src="<?php echo base_url('assets/img/nilai3.png'); ?>" width="80" height="80"/>
                 </div>
                 <blockquote style="padding:20px 10px 20px 10px; color:#333; margin:30px 30px 30px 30px;" >
                     <p>Mata Kuliah :  <b><?php echo $tampil_matkul; ?></b></p>                    

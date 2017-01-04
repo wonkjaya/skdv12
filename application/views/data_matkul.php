@@ -36,7 +36,7 @@ $this->session->unset_userdata('message1');
 
             <div class="well padding">
                 <div class="pull-right" style="margin:30px 30px 30px 30px;">
-                    <img src="<?php echo base_url(); ?>assets/img/nilai_absensi.png" width="80" height="80"/>
+                    <img src="<?php echo base_url('assets/img/nilai_absensi.png'); ?>" width="80" height="80"/>
                 </div>
                 <blockquote style="padding:20px 10px 20px 10px; color:#333; margin:30px 30px 30px 30px;" >
                     <p>Data ini berisi seluruh data mata kuliah yang ada di Fakultas Teknologi Pertanian UJ.</p>
@@ -65,8 +65,8 @@ $this->session->unset_userdata('message1');
                                 <td class="align-center"><?php echo $row->jml_sks; ?></td>
                                  <td class="align-center"><?php echo $row->nama; ?></td>                  
                                 <td>
-                                    <a href="<?php echo base_url(); ?>index.php/admin/update_matkul/<?php echo $row->kd_matkul; ?>" class="icon-edit" title="Edit" onclick="return confirm('Apakah anda yakin untuk mengupdate data ?');"></a> ||
-                                    <a href="<?php echo base_url(); ?>index.php/admin/delete_matkul/<?php echo $row->kd_matkul; ?>"class="icon-remove-sign" title="Delete" onclick="return confirm('Apakah anda yakin untuk menghapus data ?');"></a>
+                                    <a href="<?php echo base_url('admin/update_matkul/'); ?><?php echo $row->kd_matkul; ?>" class="icon-edit" title="Edit" onclick="return confirm('Apakah anda yakin untuk mengupdate data ?');"></a> ||
+                                    <a href="<?php echo base_url('admin/delete_matkul/'); ?><?php echo $row->kd_matkul; ?>"class="icon-remove-sign" title="Delete" onclick="return confirm('Apakah anda yakin untuk menghapus data ?');"></a>
                                 </td>
                             </tr>
                             <?php
@@ -80,7 +80,7 @@ $this->session->unset_userdata('message1');
                 </div>
                 <div style="margin-top:30px; padding-right:20px; ">
                     <form style="float:right" >
-                        <button type="submit" class="btn btn-success" onclick="return confirm('Apakah anda yakin untuk menambah data baru?');" formaction="<?php echo base_url(); ?>index.php/admin/add_matkul" formmethod="post">Add</button>
+                        <button type="submit" class="btn btn-success" onclick="return confirm('Apakah anda yakin untuk menambah data baru?');" formaction="<?php echo base_url('admin/add_matkul'); ?>" formmethod="post">Add</button>
                     </form>
                 </div>		
             </div>

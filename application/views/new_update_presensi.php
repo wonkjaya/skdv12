@@ -8,13 +8,13 @@
             </div>
             <div class="well">
                 <div class="pull-right" style="margin:30px 30px 30px 30px;">
-                    <img src="<?php echo base_url(); ?>assets/img/nilai_absensi.png" width="80" height="80"/>
+                    <img src="<?php echo base_url('assets/img/nilai_absensi.png'); ?>" width="80" height="80"/>
                 </div>
                 <blockquote style="padding:20px 10px 20px 10px; color:#333; margin:30px 30px 30px 30px;" >
                     <p>Mata Kuliah :  <b><?php echo $matkul_tampil; ?></b></p>
                     <p>Kelas : <b><?php echo $kelas_tampil; ?></b></p>
                 </blockquote>
-                <form name="myForm" action="<?php echo base_url(); ?>index.php/dosen/update_proses_simultan/<?php echo $id; ?>" onsubmit="return validasi();" method="post">     
+                <form name="myForm" action="<?php echo base_url('dosen/update_proses_simultan/'); ?><?php echo $id; ?>" onsubmit="return validasi();" method="post">     
                     <label for="name" style="padding-left: 30px; font-size:14px; padding-bottom: 20px;">Kompetensi ke : <b><?php echo $update_pertemuan->minggu_ke; ?></b></label>
                     <input type="hidden" name="minggu_ke" value="<?php echo $update_pertemuan->minggu_ke; ?>"/>
                     <input type="hidden" name="matkul" value="<?php echo $update_pertemuan->kd_matkul; ?>"/>

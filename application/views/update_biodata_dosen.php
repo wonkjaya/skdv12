@@ -10,7 +10,7 @@
                 <blockquote style="padding:20px 10px 20px 10px; color:#333; margin:30px 30px 30px 30px;" >
                     <p>Input Data Dosen Baru</b></p>
                 </blockquote>
-                <form name="myForm" action="<?php echo base_url(); ?>index.php/admin/update_proses_dosen"  method="post">     
+                <form name="myForm" action="<?php echo site_url('admin/update_proses_dosen'); ?>"  method="post">     
                     <div class="control-group">
                         <label class="control-label">NIP :</label>
                         <div class="controls">
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                     <?php if($check_login == true){?>
-                    <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin untuk mereset password?');" formaction="<?php echo base_url(); ?>index.php/admin/reset_password/<?php echo $data_dosen->nip; ?>" formmethod="post" style="margin:30px;">RESET PASSWORD</button>
+                    <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin untuk mereset password?');" formaction="<?php echo site_url('admin/reset_password/'.$data_dosen->nip); ?>" formmethod="post" style="margin:30px;">RESET PASSWORD</button>
                         <?php }else{?>
                     <div class="control-group">
                         <label class="control-label">Password Login :</label>

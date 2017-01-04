@@ -43,7 +43,7 @@ $this->session->unset_userdata('message1');
             </div>
             <div class="well">
                 <div class="pull-right" style="margin:30px 30px 30px 30px;">
-                    <img src="<?php echo base_url(); ?>assets/img/nilai_absensi.png" width="80" height="80"/>
+                    <img src="<?php echo base_url('assets/img/nilai_absensi.png'); ?>" width="80" height="80"/>
                 </div>
                 <blockquote style="padding:20px 10px 20px 10px; color:#333; margin:30px 30px 30px 30px;" >
                     <p>Mata Kuliah :  <b><?php echo $matkul_tampil; ?></b></p>                    
@@ -65,8 +65,8 @@ $this->session->unset_userdata('message1');
                             <tr class="odd gradeX">
                                <td  style="text-align:center;"><?php echo $row->minggu_ke; ?> </td>
                                 <td class="align-center"><?php echo $row->nilai_bobot; ?> %</td>
-                                <td  class="align-center"><a href="<?php echo base_url(); ?>index.php/dosen/update_presensi/<?php echo $row->id ?>" class="icon-edit-sign" title="Detail Data"></a></td>
-                                <td  class="align-center"><a href="<?php echo base_url(); ?>index.php/dosen/print_simultan/<?php echo $row->id ?>" class="icon-print" title="Print Data"></a></td>
+                                <td  class="align-center"><a href="<?php echo site_url('dosen/update_presensi/'.$row->id); ?>" class="icon-edit-sign" title="Detail Data"></a></td>
+                                <td  class="align-center"><a href="<?php echo site_url('dosen/print_simultan/'.$row->id); ?>" class="icon-print" title="Print Data"></a></td>
                             </tr>
                             <?php
                         endforeach;
@@ -75,8 +75,8 @@ $this->session->unset_userdata('message1');
                 </table>
                 <div style="margin-top:30px;">
                     <form style="float:right" >
-                        <button type="submit" class="btn btn-success" onclick="return confirm('Apakah anda yakin untuk menambah data baru?');" formaction="<?php echo base_url(); ?>index.php/dosen/add_pertemuan" formmethod="post">Add</button>
-                        <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin untuk menghapus data yang terakhir?');" formaction="<?php echo base_url(); ?>index.php/dosen/hapus_pertemuan" formmethod="post">Remove</button>
+                        <button type="submit" class="btn btn-success" onclick="return confirm('Apakah anda yakin untuk menambah data baru?');" formaction="<?php echo site_url('dosen/add_pertemuan'); ?>" formmethod="post">Add</button>
+                        <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin untuk menghapus data yang terakhir?');" formaction="<?php echo site_url('dosen/hapus_pertemuan'); ?>" formmethod="post">Remove</button>
                     </form>
                 </div>				
             </div>

@@ -8,7 +8,7 @@ include 'fpdf.php';
 // Page header
         function Header() {
             // Logo
-            $this->Image(base_url() . "assets/img/download.png", 12, 8, 25, 25);
+            $this->Image(base_url( "assets/img/download.png"), 12, 8, 25, 25);
             // Arial bold 15
             $this->SetFont('Arial', 'B', 15);
             $this->Cell(200, 6, 'KEMENTERIAN PENDIDIKAN NASIONAL', 0, 1, 'C', FALSE);

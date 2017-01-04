@@ -8,10 +8,10 @@
             </div>
             <div class="well">
                 <div class="pull-right" style="margin:30px 30px 30px 30px;">
-                    <img src="<?php echo base_url(); ?>assets/img/nilai2.png" width="80" height="80"/>
+                    <img src="<?php echo base_url('assets/img/nilai2.png'); ?>" width="80" height="80"/>
                 </div>
 
-                <form name="myForm" action="<?php echo base_url(); ?>index.php/dosen/update_proses_simultan_absensi" onsubmit="return validasi();" method="post">     
+                <form name="myForm" action="<?php echo base_url('dosen/update_proses_simultan_absensi'); ?>" onsubmit="return validasi();" method="post">     
                     <blockquote style="padding:20px 10px 20px 10px; color:#333; margin:30px 30px 30px 30px;" >
                         <input type="hidden" name="id_pertemuan_absensi" value="<?php echo $id; ?>"/>
                         Tanggal : <input type="text" id="a" class="span2" name="tanggal"  value="<?php echo $tanggal->tanggal; ?>" readonly/>

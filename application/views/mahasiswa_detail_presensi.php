@@ -9,7 +9,7 @@
             <?php if ($aktif != "") { ?>
                 <div class="well no-padding">
                     <div class="pull-right" style="margin:30px 30px 30px 30px;">
-                        <img src="<?php echo base_url(); ?>assets/img/nilai_absensi.png" width="80" height="80"/>
+                        <img src="<?php echo base_url('assets/img/nilai_absensi.png'); ?>" width="80" height="80"/>
                     </div>
                     <blockquote style="padding:20px 10px 20px 10px; color:#333; margin:30px 30px 30px 30px;" >
                         <p><font style="color:red; font-weight:bold;"><?php echo $aktif; ?></font></p>
@@ -17,7 +17,7 @@
                 <?php } else { ?>     
                     <div class="well padding">
                         <div class="pull-right" style="margin:30px 30px 30px 30px;">
-                            <img src="<?php echo base_url(); ?>assets/img/nilai2.png" width="80" height="80"/>
+                            <img src="<?php echo base_url('assets/img/nilai2.png'); ?>" width="80" height="80"/>
                         </div>
                         <blockquote style="padding:20px 10px 20px 10px; color:#333; margin:30px 30px 30px 30px;" >
                             <p>Mata Kuliah :  <b><?php echo $kd_matkul; ?></b></p>                    

@@ -6,7 +6,7 @@
             </div>
             <div class="well padding">
                 <div class="pull-right" style="margin:30px 30px 30px 30px;">
-                    <img src="<?php echo base_url(); ?>assets/img/nilai_absensi.png" width="80" height="80"/>
+                    <img src="<?php echo base_url('assets/img/nilai_absensi.png'); ?>" width="80" height="80"/>
                 </div>
                 <blockquote style="padding:20px 10px 20px 10px; color:#333; margin:30px 30px 30px 30px;" >
                     <p>Pilihlah data Mata Kuliah yang tersedia untuk mengetahui IPD .</p>
@@ -34,7 +34,7 @@
                                     <form style="padding:0; margin:0;">
                                         <input type="hidden" name="matkul" value="<?php echo $row->kd_matkul; ?>"/>
                                         <input type="hidden" name="nm_matkul" value="<?php echo $row->nm_matkul; ?>"/>
-                                        <button type="submit" class="btn btn-success" onclick="return confirm('Apakah anda yakin untuk melihat nilai?');" formaction="<?php echo base_url(); ?>index.php/admin/lihat_nilai_ipd" formmethod="post"><i class="icon-envelope"></i> Detail Data</button>
+                                        <button type="submit" class="btn btn-success" onclick="return confirm('Apakah anda yakin untuk melihat nilai?');" formaction="<?php echo base_url('admin/lihat_nilai_ipd'); ?>" formmethod="post"><i class="icon-envelope"></i> Detail Data</button>
                                     </form>
                                 </td>
                             </tr>

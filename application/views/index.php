@@ -7,7 +7,7 @@
         <div class="well">  
             <ul class="rslides" id="slider1" style="width:inherit;">
                 <li style="list-style: none;"><img src="<?php echo base_url();?>/assets/img/slide2.gif" alt="" ></li>
-			  <li style="list-style: none;"><img src="<?php echo base_url();?>/assets/img/slide3.jpg" alt="" ></li>
+			  <li style="list-style: none;"><img src="<?php echo base_url('/assets/img/slide3.jpg');?>" alt="" ></li>
 			</ul>
         </div>
       </div>

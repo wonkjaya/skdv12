@@ -9,7 +9,7 @@
             <?php if ($aktif != "") { ?>
                 <div class="well no-padding">
                     <div class="pull-right" style="margin:30px 30px 30px 30px;">
-                        <img src="<?php echo base_url(); ?>assets/img/nilai_absensi.png" width="80" height="80"/>
+                        <img src="<?php echo base_url('assets/img/nilai_absensi.png'); ?>" width="80" height="80"/>
                     </div>
                     <blockquote style="padding:20px 10px 20px 10px; color:#333; margin:30px 30px 30px 30px;" >
                         <p><font style="color:red; font-weight:bold;"><?php echo $aktif; ?></font></p>
@@ -17,13 +17,13 @@
                 <?php } else { ?>     
                     <div class="well no-padding">
                         <div class="pull-right" style="margin:30px 30px 30px 30px;">
-                            <img src="<?php echo base_url(); ?>assets/img/nilai2.png" width="80" height="80"/>
+                            <img src="<?php echo base_url('assets/img/nilai2.png'); ?>" width="80" height="80"/>
                         </div>
                         <blockquote style="padding:20px 10px 20px 10px; color:#333; margin:30px 30px 30px 30px;" >
                             <p>Sebelum menggunakan sistem ini, Mahasiswa wajib mengisi kuisoner untuk dosen</p>
                             <small>Kuisioner Dosen</small>
                         </blockquote>
-                        <form name="myForm" class="form-horizontal" action="<?php echo base_url(); ?>index.php/mahasiswa/proses_kuisoner" onsubmit="return periksaForm();" method="post" >
+                        <form name="myForm" class="form-horizontal" action="<?php echo base_url('mahasiswa/proses_kuisoner'); ?>" onsubmit="return periksaForm();" method="post" >
                             <P style="padding-left: 30px; text-align: center; font-size: 16px; font-weight:bold; "> KUISONER AKHIR PERKULIAHAN </P>
                             <div class="control-group" style="padding: 25px 30px;">
                                 <label class="control-label" style="font-size:13px; width:300px;">1. Seberapa jelas rencana mata kuliah ini ?</label>

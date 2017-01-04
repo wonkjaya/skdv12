@@ -38,7 +38,7 @@ $this->session->unset_userdata('message1');
             <?php if ($aktif != "") { ?>
                 <div class="well no-padding">
                     <div class="pull-right" style="margin:30px 30px 30px 30px;">
-                        <img src="<?php echo base_url(); ?>assets/img/nilai_absensi.png" width="80" height="80"/>
+                        <img src="<?php echo base_url('assets/img/nilai_absensi.png'); ?>" width="80" height="80"/>
                     </div>
                     <blockquote style="padding:20px 10px 20px 10px; color:#333; margin:30px 30px 30px 30px;" >
                         <p><font style="color:red; font-weight:bold;"><?php echo $aktif; ?></font></p>
@@ -46,7 +46,7 @@ $this->session->unset_userdata('message1');
                 <?php } else { ?>     
                     <div class="well padding">
                         <div class="pull-right" style="margin:30px 30px 30px 30px;">
-                            <img src="<?php echo base_url(); ?>assets/img/nilai2.png" width="80" height="80"/>
+                            <img src="<?php echo base_url('assets/img/nilai2.png'); ?>" width="80" height="80"/>
                         </div>
                         <blockquote style="padding:20px 10px 20px 10px; color:#333; margin:30px 30px 30px 30px;" >
                                <p>Mata Kuliah :  <b><?php echo $kd_matkul; ?></b></p>                    
@@ -70,7 +70,7 @@ $this->session->unset_userdata('message1');
                                 <td class="align-center"><?php echo $no; ?></td>
                                 <td class="align-center"><?php echo $row->minggu_ke; ?> </td>
                                 <td class="align-center"><?php echo $row->nilai_bobot; ?> %</td>
-                                <td  class="align-center"><a href="<?php echo base_url(); ?>index.php/mahasiswa/detail_presensi_kompetensi/<?php echo $row->id ?>" class="icon-edit-sign" title="Lihat Nilai"></a></td>
+                                <td  class="align-center"><a href="<?php echo base_url('mahasiswa/detail_presensi_kompetensi/'); ?><?php echo $row->id ?>" class="icon-edit-sign" title="Lihat Nilai"></a></td>
                            </tr>
                             <?php
                             $no++;

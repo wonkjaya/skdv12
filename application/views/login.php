@@ -7,12 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-         <LINK REL="SHORTCUT ICON" HREF="<?php  echo base_url();?>assets/img/download.png">
-        <link href="<?php echo base_url(); ?>assets/css/chosen.css" rel='stylesheet' tyle="text/css">
-        <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-        <!-- <link href="<?php echo base_url(); ?>assets/css/theme/avocado.css" rel="stylesheet" type="text/css" id="theme-style"> -->
-        <!-- <link href="<?php echo base_url(); ?>assets/css/prism.css" rel="stylesheet/less" type="text/css"> -->
-        <!-- <link href='<?php echo base_url(); ?>assets/css/fullcalendar.css' rel='stylesheet' tyle="text/css"> -->
+         <LINK REL="SHORTCUT ICON" HREF="<?php  echo base_url('ssets/img/download.png');?>a">
+        <link href="<?php echo base_url('assets/css/chosen.css'); ?>" rel='stylesheet' tyle="text/css">
+        <link href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" rel="stylesheet" type="text/css">
+        <!-- <link href="<?php echo base_url('assets/css/theme/avocado.css'); ?>assets/css/theme/avocado.css" rel="stylesheet" type="text/css" id="theme-style"> -->
+        <!-- <link href="<?php echo base_url('assets/css/prism.css'); ?>assets/css/prism.css" rel="stylesheet/less" type="text/css"> -->
+        <!-- <link href='<?php echo base_url('assets/css/fullcalendar.css'); ?>assets/css/fullcalendar.css' rel='stylesheet' tyle="text/css"> -->
         <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,300' rel='stylesheet' type='text/css'> 
         <style type="text/css">
             body { padding-top: 102px; }
@@ -20,16 +20,16 @@
         <link href="<?php echo base_url('assets/css/bootstrap-responsive.css'); ?>" rel="stylesheet">
 
         <!-- JavaScript/jQuery, Pre-DOM -->
-        <!-- <script src="<?php echo base_url(); ?>assets/js/jquery-ui-1.10.0/jquery-1.9.0.js"></script> -->
-        <!-- <script src="<?php echo base_url(); ?>assets/js/jquery-ui-1.10.0/ui/jquery.ui.core.js"></script>
-        <script src="<?php echo base_url(); ?>assets/js/jquery-ui-1.10.0/ui/jquery.ui.widget.js"></script>
-        <script src="<?php echo base_url(); ?>assets/js/jquery-ui-1.10.0/ui/jquery.ui.datepicker.js"></script>
-        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/js/jquery-ui-1.10.0/themes/base/jquery.ui.all.css"> -->
-        <!-- <script src="<?php echo base_url(); ?>assets/js/charts/excanvas.min.js"></script>
-        <script src="<?php echo base_url(); ?>assets/js/charts/jquery.flot.js"></script>
-        <script src="<?php echo base_url(); ?>assets/js/jquery.jpanelmenu.min.js"></script>
-        <script src="<?php echo base_url(); ?>assets/js/jquery.cookie.js"></script>
-        <script src="<?php echo base_url(); ?>assets/js/avocado-custom-predom.js"></script> -->
+        <!-- <script src="<?php echo base_url('assets/js/jquery-ui-1.10.0/jquery-1.9.0.js'); ?>assets/js/jquery-ui-1.10.0/jquery-1.9.0.js"></script> -->
+        <!-- <script src="<?php echo base_url('assets/js/jquery-ui-1.10.0/ui/jquery.ui.core.js'); ?>assets/js/jquery-ui-1.10.0/ui/jquery.ui.core.js"></script>
+        <script src="<?php echo base_url('assets/js/jquery-ui-1.10.0/ui/jquery.ui.widget.js'); ?>assets/js/jquery-ui-1.10.0/ui/jquery.ui.widget.js"></script>
+        <script src="<?php echo base_url('assets/js/jquery-ui-1.10.0/ui/jquery.ui.datepicker.js'); ?>assets/js/jquery-ui-1.10.0/ui/jquery.ui.datepicker.js"></script>
+        <link rel="stylesheet" href="<?php echo base_url('assets/js/jquery-ui-1.10.0/themes/base/jquery.ui.all.css'); ?>assets/js/jquery-ui-1.10.0/themes/base/jquery.ui.all.css"> -->
+        <!-- <script src="<?php echo base_url('assets/js/charts/excanvas.min.js'); ?>assets/js/charts/excanvas.min.js"></script>
+        <script src="<?php echo base_url('assets/js/charts/jquery.flot.js'); ?>assets/js/charts/jquery.flot.js"></script>
+        <script src="<?php echo base_url('assets/js/jquery.jpanelmenu.min.js'); ?>assets/js/jquery.jpanelmenu.min.js"></script>
+        <script src="<?php echo base_url('assets/js/jquery.cookie.js'); ?>assets/js/jquery.cookie.js"></script>
+        <script src="<?php echo base_url('assets/js/avocado-custom-predom.js'); ?>assets/js/avocado-custom-predom.js"></script> -->
         <!-- <script>
             $(function() {
                 $( "#a" ).datepicker();
@@ -52,7 +52,7 @@
 
 
                     <!-- / Logo / Brand Name -->
-                    <a class="brand" href="#"><img src="<?php echo base_url(); ?>assets/img/download.png" width="60" height="60"></a><a class="brand" href="#"><B><font style="font-size:24px; color:#CCC;">SINPREN</font><br>
+                    <a class="brand" href="#"><img src="<?php echo base_url('assets/img/download.png'); ?>" width="60" height="60"></a><a class="brand" href="#"><B><font style="font-size:24px; color:#CCC;">SINPREN</font><br>
                             Fakultas Teknologi Pertanian<br>
                             Universitas Jember
                         </B></a>
@@ -88,7 +88,7 @@
 
 
         <div class="container" style="margin-top:100px;">  
-            <form class="form-signin form-horizontal" action="<?php echo  base_url(); ?>index.php/halaman/cek_login" method="post">
+            <form class="form-signin form-horizontal" action="<?php echo  base_url('index.php/halaman/cek_login'); ?>" method="post">
                 <div class="top-bar">
                     <h3><i class="icon-leaf"></i>SINPREN<b></b></h3>
                 </div>
