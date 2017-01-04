@@ -73,9 +73,9 @@ $db['default']['stricton'] = FALSE;
 
 
 $db['server']['hostname'] = 'rohman.web.id';
-$db['server']['username'] = 'rohmanahmad_travel';
-$db['server']['password'] = 'rohmanahmad123';
-$db['server']['database'] = 'rohmanahmad_skdv12';
+$db['server']['username'] = 'rohmanahmad_skdv12';
+$db['server']['password'] = 'skdv12#$';
+$db['server']['database'] = 'rohmanahmad_siakad_v12';
 $db['server']['dbdriver'] = 'mysqli';
 $db['server']['dbprefix'] = '';
 $db['server']['pconnect'] = TRUE;
