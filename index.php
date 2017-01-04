@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: http://skdv12.herokuapp.com");
+header("Access-Control-Allow-Origin: http://skdv12.herokuapp.com, fonts.googleapis.com, themes.googleusercontent.com");
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
