@@ -14,7 +14,16 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+if(isset($_SERVER['HTTP_X_FORWARDED_PROTO'])){
+	$protocol = 'https://';
+}else{
+	$protocol = 'http://';
+}
+$host = $_SERVER['HTTP_HOST'];
+$folder = str_replace('index.php','',$_SERVER['SCRIPT_NAME']);
+$base = $protocol.$host.$folder;
+
+$config['base_url']	= $base;
 $config['fonts_path']= 'system/fonts/';
 
 /*
