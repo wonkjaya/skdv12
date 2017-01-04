@@ -17,10 +17,10 @@
         <style type="text/css">
             body { padding-top: 102px; }
         </style>
-        <link href="<?php echo base_url(); ?>assets/css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="<?php echo base_url('assets/css/bootstrap-responsive.css'); ?>" rel="stylesheet">
 
         <!-- JavaScript/jQuery, Pre-DOM -->
-        <script src="<?php echo base_url(); ?>assets/js/jquery-ui-1.10.0/jquery-1.9.0.js"></script>
+        <!-- <script src="<?php echo base_url(); ?>assets/js/jquery-ui-1.10.0/jquery-1.9.0.js"></script> -->
         <!-- <script src="<?php echo base_url(); ?>assets/js/jquery-ui-1.10.0/ui/jquery.ui.core.js"></script>
         <script src="<?php echo base_url(); ?>assets/js/jquery-ui-1.10.0/ui/jquery.ui.widget.js"></script>
         <script src="<?php echo base_url(); ?>assets/js/jquery-ui-1.10.0/ui/jquery.ui.datepicker.js"></script>
